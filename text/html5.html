@@ -5,17 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTMl5실습</title>
+    <style>
+        table, tr, th, td {
+            border: 1px solid black;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
+    <!-- 유튜브영상 집어넣기 -->
+    <iframe width="720" height="405" src="https://www.youtube.com/embed/WVt_6s7CkM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- 컨텐츠 경로 .은 현재폴더의 상대경로, 절대경로-->
+    <img style="width: 100%;" src="./img/water.webp" alt="엑박일떄 표시할 내용이 여기에">
+    <img style="width: 100%;" src="/text/img/water.webp" alt="엑박일떄 표시할 내용이 여기에">
+    <!-- 영역지정 div : division, 가상링크 #으로 생성 -->
+    <div style="background-color: rgb(162, 162, 212);">
+        <a href="#">네이버</a>
+        <a href="#">다음</a>
+        <a href="#">네이트</a>
+    </div>
+    <!-- 리스트형 2가지: ol(Ordered List 정렬된 리스트), ul(Unordered List 비정렬) -->
+    <ol type="i">
+        <li>헬로</li>
+        <li>헬로</li>
+        <li>헬로</li>
+        <li>헬로</li>
+    </ol>
+    <ul>
+        <li>헬로</li>
+        <li>헬로</li>
+        <li>헬로</li>
+    </ul>
+    <!-- H2o, X2 아래첨자로(sub), 윗첨자(sup) 보이게 -->
+    <p>H<sub>2</sub>0</p>
+    <p>x<sup>2</sup>=4</p>
+    <!-- 로렘 입숨(립숨)은 작업공간에 채울내용을 자동으로 생성해주는 기능 -->
+    <p></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste est debitis impedit, necessitatibus, unde reprehenderit ipsam in ab laudantium nisi officia dolore quae suscipit neque corrupti doloremque! Eaque, molestias. Animi!</p>
     <!-- html:5클론, ;세미클론 -->
     <!-- h헤더태그 약자 글 제목에 표시 -->
     <!-- p태그는 문단의 약자(paragraph) -->
     <!-- 줄바꿈이 이루어지는 영역태그를 블럭영역 -->
     <!-- 줄바꿈이 이루어지지 않는 영역은 인라인블럭영역 = span -->
     <!-- 도메인(사람이확인) == IP주소(컴퓨터시스템) -->
+    <!-- 매칭(묶어줌) = 바인딩(묶어줌) -->
     <!-- 사람색상(color) : red, blue, skyblue, black  -->
-    <!--  -->
-    <span style="color: #6204b0">헬로 html5</span>
+    <!-- 컴퓨터색상(color): #ff(red)-00(green)-00(blue):
+        예, 흰색: #ffffff = #fff = white = 함수 rgb(255, 255, 255);
+        #16진수: 빛은 3가지 색상(3원색) 빛은 더하면 흰색으로 변함,
+        참고로, 물감은 더하면 검은색으로 변함.
+    -->
+    <!-- 16진수: 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f = 총 16개 -->
+    <span style="color: rgb(255, 255, 0)">헬로 html5</span>
     <span>헬로 html5</span>
     <hr>
     <br>
