@@ -1,4 +1,6 @@
 #### 20210511(화) 작업내역
+- 로렘 입술 한글URL: http://guny.kr/stuff/klorem/#/p-html
+- 로렘 입술 영엉URL: 
 - URl경로(path): /루트. /text/html5.html 
 - html5의 레이아웃 구조 제작합니다.
 - 서버(응답하는프로그램 = response) = 아파치, 톱캣서버
