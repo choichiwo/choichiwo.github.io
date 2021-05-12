@@ -20,9 +20,36 @@
         가상선택자: ::after, ::before, :before
         가상요소(Element-가상태그): :hover 사용예:  a:hover
     */
+    h1 { background-color: skyblue ;}
+    div * {
+        color: green
+    }
+    .box-one, .box-two { background-color: tomato; }
+    #box-four, #box-five { background-color: yellow; }
+    .box-one p:after { content: ' add'; }
+    .box-one p::before { content: 'add+ ';}
+    a:hover {color: white;}
+    /* 크기단위 font크기, img크기 단위종류3가지: ~px, ~em(1,2,배수), ~rem(root기반배수) */
+    .box-one {
+        /* font-size: 8px; */
+        /* font-size: 1em;  웹브라우저 기본 폰트크기는 16px * 1.5 = 1em */
+        /* font-size: 1.5rem; */
+        }
+    .box-one p {
+        /* 웹브라우저 기본폰트인 16px의 1.5배 아니고, 부모요소의 1.5배 (8px의 1.5배) */
+        font-size: 1.5em;
+        font-size: 1.5rem;
+        /* 위에서부터 해석하는 방식 인터프리터형-자바스크립트는 인터프리터형 언어 */
+    }    
 </style>
 </head>
 <body>
+    <h1>헬로 CSS</h1>
+    <div class="box-one"><p>one</p></div>
+    <div class="box-two"><a href="#">two two two</a></div>
+    <div class="box-three">three</div>
+    <div id="box-four">four</div>
+    <div id="box-five">five</div>
     <!-- 
         10 크롬 확장프로그램으로 컬러 피커 사용해보기
         09 구글 폰트 사용하기: 나눔고딕체 사용
@@ -38,6 +65,7 @@
         cascade style sheet 계층형 스타일 표
         01 css 적용하는 3가지 방법 확인, 내부css, 외부css, 인라인css ok.
      -->
+     
      <p><span style="color: tomato;">Lorem ipsum</span> ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae natus cum, repudiandae aperiam eaque ab laboriosam doloremque. Labore perferendis cum optio voluptates quia iure deserunt ipsum. Nesciunt ea, repellat quibusdam consequuntur similique cupiditate voluptas omnis obcaecati rem perspiciatis libero veniam quam earum quos. Maxime officia reprehenderit, distinctio omnis odio delectus labore eum molestias voluptate possimus excepturi mollitia eveniet doloremque esse optio soluta facere nam tenetur quidem repellat debitis enim aut officiis libero. Dolores mollitia, ipsa voluptates nulla soluta voluptatum molestias deserunt ea tenetur quidem adipisci saepe dolore libero eligendi ab odit non distinctio incidunt necessitatibus, repellat corporis repudiandae ut?</p>
 </body>
 </html>
