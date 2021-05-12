@@ -1,3 +1,9 @@
+#### 20210512(수) 작업내역
+- git clone 으로 프로젝트롤 가져온 경우 아래 내용을 추가해 주셔야 됩니다.
+- git config --list 확인에서 user.name, user,email 없으면 아래추가.
+- 터미널에서 아래 2가지 실행
+- git config 
+
 #### 20210511(화) 작업내역
 - 로렘 입술 한글URL: http://guny.kr/stuff/klorem/
 - 로렘 입술 영엉URL: https://loremipsum.io/generator/
