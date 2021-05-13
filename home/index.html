@@ -27,81 +27,89 @@
 }
 /* 슬라이드영역 */
 .main_rolling_pc {
-    display: block;
+	display: block;
 }
 .visualRoll {
-    position: relative;
-    width: 100%;
+	position: relative;
+	width: 100%;
 }
-.viewImgList li {
-    position: relative;
-    width: 100%;
+.viewImgList {
+	position: relative;
+	width: 100%;
 }
 ul.viewImgList li {
-    /* ul.클래스명: ul태그중 클래스명이 viewImgList 영역 */
-    text-align: center;
-    height: 300px;
-    line-height: 550px;
-    background-size: cover; /* 배경 이미지의 크기를 꽉 채우는 값 cover */
-    width: 100%;
+	/* ul.클래스명: ul태그중 클래스명이 viewImgList 영역 */
+	text-align: center;
+	height: 300px;
+	line-height: 550px;
+	background-size: cover;/* 배경 이미지의 크기를 꽉 채우는 값 cover */
+	width: 100%;
 }
-.roll_cotent a img {
-    display: none;
+.roll_content a img {
+	display: none;
 }
 li.imglist0 {
-    position: relative;
-    z-index: 50;
-    background: url(./img/slide.jpg) no-repeat;
-  }
+	position: relative;
+	z-index: 50;
+	background: url(./img/slide.jpg) no-repeat;
+}
 li.imglist1 {
-    position: absolute;
-    z-index: 10;
-    left: 0; top: 0;
-    background: url(./img/slide.jpg) no-repeat;
+	position: absolute;
+	z-index: 10;
+	left:0; top:0;
+	background: url(./img/slide.jpg) no-repeat;
 }
 li.imglist2 {
-    position: absolute;
-    z-index: 10;
-    left: 0; top: 0;
-    background: url(./img/slide.jpg) no-repeat;
-  }
-  .roll_cotent {
-      position: static;
-  }
-  .roll_cotent .roll_txtline{
-      position: absolute;
-      left: 0;
-      bottom: 60px;/* roll_cotent하단에서 60px 위에 위치 */
-      width: 100%;
-      line-height: 1;
-      text-align: center;
-      font-size: 22px;
-      color: #ffff;
-      letter-spacing: 2px;
-  }
-  .rollingbtnArea {
-      position: absolute; /* 위치를 기준위치에서 고정 시켜놓겠다. */
-      width: 100%;
-      left: 0;
-      bottom: 25px;
-      z-index: 200;
-  }
-  .rollingbtn {
-      width: 320px;
-      margin: 0 auto;/* 버튼영역에 5개 들어가고, 가운데 정렬 시킴 */
-      text-align: center;
-  }
-  .rollingbtn li.butt0 {
-    margin-left: 10px;
-  }
-  .rollingbtn li {
-    display: inline-block;
-    margin-left: 5px;
-  }
-  .rollingbtn li a {
-    vertical-align: top;/* img하고 다른태그 사용시 다른 태그의 세로 정렬 */
-  }
-/* 슬라이드영역 */
+	position: absolute;
+	z-index: 10;
+	left:0; top:0;
+	background: url(./img/slide.jpg) no-repeat;
+}
+.roll_content {
+	position: static;
+}
+.roll_content .roll_txtline {
+	position: absolute;
+	left:0;
+	bottom: 60px;/* roll_content하단에서 60px 위에 위치 */
+	width: 100%;
+	line-height: 1;
+	text-align: center;
+	font-size: 22px;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.rollbtnArea {
+	position: absolute;/* 위치를 기준위치에서 고정시켜놓겠다 */
+	width: 100%;
+	left: 0px;
+	bottom: 25px;
+	z-index: 200;
+}
+.rollingbtn {
+	width: 320px;
+	margin: 0 auto;/* 버튼영역에 5개 들어가고, 가운데 정렬 시킴 */
+	text-align: center;
+}
+.rollingbtn li.butt0 {
+	margin-left: 10px;
+}
+.rollingbtn li {
+	display: inline-block;
+	margin-left: 5px;
+}
+.rollingbtn li a {
+	vertical-align: top;/* img하고 다른태그사용시 다른 태그의 세로 정렬 */
+}
+/* //슬라이드영역 */
+
+/* 겔러리최근게시물영역 */
+.about_area h2 b {
+    display: block;
+    padding: 27px 0 25px; /* 27상하, 0좌, 25우 */
+}
+/* 겔러리최근게시물영역 */
+
 /* 본문컨테이너영역 */
 </style>
 <script>
