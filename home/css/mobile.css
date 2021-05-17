@@ -216,7 +216,7 @@ ul.viewImgList li {
 	display: none;
 }
 li.imglist0 {
-	position: relative;
+	position: relative;/* 기준위치 */
 	z-index: 50;
 	background: url(../img/slide1.jpg) no-repeat;
 }
