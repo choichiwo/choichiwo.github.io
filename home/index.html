@@ -53,8 +53,8 @@ function play_w(directw) { // 좌우로 슬라이드되는 함수선언(왼쪽|�
 		$('.viewImgList li.imglist0').animate({'opacity':1},1000);//서서히 나타내기
 	}else if(slideNum == 1) {
 		$('.viewImgList li.imglist0').animate({'opacity':0},1000);//서서히 사라지기
-		$('.viewImgList li.imglist2').animate({'opacity':1},1000);//서서히 사라지기
-		$('.viewImgList li.imglist1').animate({'opacity':0},1000);//서서히 나타내기
+		$('.viewImgList li.imglist2').animate({'opacity':0},1000);//서서히 사라지기
+		$('.viewImgList li.imglist1').animate({'opacity':1},1000);//서서히 나타내기
 	}else if(slideNum == 2) {
 		$('.viewImgList li.imglist0').animate({'opacity':0},1000);//서서히 사라지기
 		$('.viewImgList li.imglist1').animate({'opacity':0},1000);//서서히 사라지기
@@ -74,6 +74,21 @@ function play_w(directw) { // 좌우로 슬라이드되는 함수선언(왼쪽|�
 		var slidePlayHide = setTimeout(function() {
 			$('.rollplay').css('display', 'none');
 		},3000); // 3초 후에 rollplay클래스 영역을 숨김.
+		// 3개의 슬라이드 버튼 클릭 액션 처리
+		$('.rollstop').click(function() {
+			// this는 클릭한 본인 태글르 말합니다.
+			$(this).hide();// 현재 stop버튼 숨김.
+			$('.rollplay').css('display', 'inline-block')
+			if(slideAuto) {clearTimeout(slideAuto);}//slideAuto변수가 없다면, play_w함수를 실행 중지.
+		});
+		$('.rollplay a').click(function() {
+			$(this).parent().hide();
+			$('.rollstop').css('display', 'inline-block');
+			play_w('right');// 3초마다 슬라이드 이미지 액션이 발생합니다.
+		});
+		$('.rollingbtn li.seq a').each(function(index) {
+			$(this)
+		});
     });
 </script>
 </head>
