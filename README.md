@@ -11,6 +11,9 @@
 - 모바일 게시판페이지(CRUD) CSS 처리
 - 카멜표기법(낙타등 표기법 예, .bbsListTbl), _표기법(예, .bbs_title)
 - href: hypertext referance (웹문서 참조)
+- 정적(static) 콘텐츠: html, css, js
+- 동적(dtnamic) 콘텐츠: jsp(java스프링), py(ptrhon장고), PHP, C#(닷넷), Nodejs(익스프레스)
+- 오후에 자바(스프링) 개발환경 설치예정.(이클립스:전자정부표준프레임워크의 개발환경을 설치) 
 - 모바일 서브페이지 CSS 스타일처리
 - 테블릿+PC용 CSS 스타일처리
 - 테블릿+PC용 CSS 스타일처리
